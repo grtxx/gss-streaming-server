@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="gss.exe"/>
+    <OBJFILES value="gss.obj gss_form1.obj ..\ds1\ds1_playingthread.obj 
+      ..\ds1\ds1_decoderthread.obj ..\ds1\circbuffer.obj 
+      ..\ds1\ds1_recordingthread.obj ..\ds1\ds1_encoderthread.obj wfx.obj 
+      ..\autorec\grtvumeter.obj wwwserver.obj ..\..\_common\gsockets.obj 
+      titledownloader.obj"/>
+    <RESFILES value="gss.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) gss_form1.dfm"/>
+    <LIBFILES value="C:\DXSDK\Lib\dsound.lib C:\DXSDK\Lib\dxguid.lib C:\DXSDK\Lib\strmiids.lib 
+      ..\ds1\libfaac.lib ..\ds1\libfaad2.lib lame_enc.lib"/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi dclusr.bpi bcbsmp.bpi dclocx.bpi"/>
+    <PATHCPP value=".;..\ds1;..\ds1;..\ds1;..\ds1;..\ds1;..\autorec;..\..\_common"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="_RTLDLL;NO_STRICT"/>
+    <MAINSOURCE value="gss.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Imports&quot;;..\..\_common;..\autorec;..\ds1;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\_Programok\!c\probak\gss;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include;C:\_Programok\!c\probak\ds1\faac\include;C:\_Programok\!c\probak\ds1\faac\libfaac"/>
+    <LIBPATH value="&quot;C:\Program Files\Borland\CBuilder6\Imports&quot;;..\..\_common;..\autorec;..\ds1;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;C:\_Programok\!c\probak\aacplay;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj Memmgr.Lib sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="gss.res" FORMNAME="" UNITNAME="gss.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="gss.cpp" FORMNAME="" UNITNAME="gss" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="gss_form1.cpp" FORMNAME="Form1" UNITNAME="gss_form1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\ds1_playingthread.cpp" FORMNAME="" UNITNAME="ds1_playingthread.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\ds1_decoderthread.cpp" FORMNAME="" UNITNAME="ds1_decoderthread.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\circbuffer.cpp" FORMNAME="" UNITNAME="circbuffer" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\ds1_recordingthread.cpp" FORMNAME="" UNITNAME="ds1_recordingthread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\ds1_encoderthread.cpp" FORMNAME="" UNITNAME="ds1_encoderthread" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\DXSDK\Lib\dsound.lib" FORMNAME="" UNITNAME="dsound.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\DXSDK\Lib\dxguid.lib" FORMNAME="" UNITNAME="dxguid.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\DXSDK\Lib\strmiids.lib" FORMNAME="" UNITNAME="strmiids.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\libfaac.lib" FORMNAME="" UNITNAME="libfaac.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\ds1\libfaad2.lib" FORMNAME="" UNITNAME="libfaad2.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="wfx.cpp" FORMNAME="" UNITNAME="wfx" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="lame_enc.lib" FORMNAME="" UNITNAME="lame_enc.lib" CONTAINERID="LibTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\autorec\grtvumeter.cpp" FORMNAME="" UNITNAME="grtvumeter" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="wwwserver.cpp" FORMNAME="" UNITNAME="wwwserver" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\_common\gsockets.cpp" FORMNAME="" UNITNAME="gsockets" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="titledownloader.cpp" FORMNAME="" UNITNAME="titledownloader" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=0
+MinorVer=9
+Release=0
+Build=4
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1038
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=0.9.0.4
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=7
+Item0=C:\Program Files\Borland\CBuilder6\Imports;..\..\_common;..\autorec;..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\gss;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include;C:\_Programok\!c\probak\ds1\faac\include;C:\_Programok\!c\probak\ds1\faac\libfaac
+Item1=C:\Program Files\Borland\CBuilder6\Imports;..\..\_common;..\autorec;..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include;C:\_Programok\!c\probak\ds1\faac\include;C:\_Programok\!c\probak\ds1\faac\libfaac
+Item2=..\..\_common;..\autorec;..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include;C:\_Programok\!c\probak\ds1\faac\include;C:\_Programok\!c\probak\ds1\faac\libfaac
+Item3=..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include;C:\_Programok\!c\probak\ds1\faac\include;C:\_Programok\!c\probak\ds1\faac\libfaac
+Item4=..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include;C:\_Programok\!c\probak\ds1\faac\include
+Item5=..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\include;$(BCB)\include\vcl;C:\_Programok\!c\probak\ds1\faad2\include
+Item6=..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=C:\Program Files\Borland\CBuilder6\Imports;..\..\_common;..\autorec;..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item1=..\..\_common;..\autorec;..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\ds1;C:\Program Files\Borland\CBuilder6\Projects;C:\_Programok\!c\probak\aacplay;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=paramset=1 -dsp /?
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+  </IDEOPTIONS>
+</PROJECT>
