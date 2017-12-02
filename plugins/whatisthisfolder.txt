@@ -1,0 +1,1 @@
+Here, you can put winamp compatible dsp plugins, so gss can use them for preprocessing your mp3 stream
